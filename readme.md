@@ -26,4 +26,8 @@ tmux a -t sessionname attach session
 tmux kill-session -t sessionname kill session
 tmux ls	list all session
 ```
+## Cheatsheets
+- tmux
+- vim
+- create a github repository
 
