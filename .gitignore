@@ -1,0 +1,4 @@
+.DS_Store
+.gcloudignore
+__pycache__
+*.pyc
