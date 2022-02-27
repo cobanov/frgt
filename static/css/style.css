@@ -14,20 +14,20 @@ body {
 }
 
 .header {
-  font-size: 3em;
+  font-size: 4em;
   padding: 0.5em;
   color: white;
-  max-width: 38rem;
+  max-width: 60rem;
   margin: auto;
-  padding: 2rem;
 }
 
-h1{
-  font-family: 'Play';
+h1 {
+  font-family: "Play";
+  font-size: 3.5rem;
 }
 
 .menu {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
@@ -47,23 +47,21 @@ a {
   color: aquamarine;
 }
 
-.add {
-  font-size: 2em;
-  padding: 5em;
-  color: white;
-  box-sizing: border-box;
+.features p {
+  line-height: 1.5;
+  font-size: 2.5rem;
 }
 
-.usage p{
-  font-size: 18px;
-
-}
-.bash{
-  font-size: 18px;
+.bash {
+  padding: 0 2em 0 2em;
 }
 
-.form{
+.form {
   color: white;
   max-width: 38rem;
   margin: auto;
+}
+
+.codes p {
+  font-size: 2rem;
 }
