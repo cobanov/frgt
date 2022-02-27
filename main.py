@@ -23,7 +23,18 @@ def hints(topic):
     try:
         url = utils.get_url(topic)
         payload = requests.get(url).text
-        return payload
+
+        # if name and url are separated by a pipe, split them
+        try:
+            piped_payload = ""
+            piped = payload.split('\n')
+            max_length = max([len(line) for line in piped])
+            for line in piped:
+                name, url = line.split('|')
+                piped_payload += f"{name : <{int(max_length/2)}}{url}\n"
+            return piped_payload
+        except:
+            return payload
 
     except Exception as e:
         print(e)
