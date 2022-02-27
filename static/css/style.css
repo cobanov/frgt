@@ -4,25 +4,32 @@ body {
   background-color: black;
   font-family: "Play";
   text-align: center;
-}
-
-.text {
   color: white;
-  font-size: 50px;
-  line-height: 200px;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
   text-decoration: none;
 }
 
-.fa:hover {
-  opacity: 0.7;
+.header {
+  font-size: 60px;
 }
-.fa-instagram {
+
+.menu {
+  line-height: 50px;
+  font-size: 30px;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
   color: white;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+  color: aquamarine;
 }
