@@ -39,3 +39,10 @@ a {
   opacity: 0.7;
   color: aquamarine;
 }
+
+.add {
+  font-size: 2em;
+  padding: 5em;
+  color: white;
+  box-sizing: border-box;
+}

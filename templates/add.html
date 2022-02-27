@@ -3,20 +3,31 @@
   <head>
     <link
       rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static', filename='css/style.css') }}"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
     />
 
     <title>frgt.dev</title>
   </head>
 
   <body>
-    <div>
-      <p>hello!</p>
+    <div class="add">
+      <div class="ui input">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <br />
+      <div class="ui labeled input">
+        <div class="ui label">gist</div>
+        <input type="text" placeholder="github gist adress" />
+      </div>
     </div>
   </body>
 </html>

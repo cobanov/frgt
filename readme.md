@@ -1,4 +1,4 @@
-![frgt](https://github.com/cobanov/frgt/blob/main/frgt.png?raw=true)
+![frgt](https://github.com/cobanov/frgt/blob/main/static/frgt.png?raw=true)
 
 # frgt.dev
 
