@@ -1,5 +1,4 @@
 flask
 gunicorn
 requests
-tinydb
-tinydb-appengine
+psycopg2
