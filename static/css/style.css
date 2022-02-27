@@ -14,13 +14,20 @@ body {
 }
 
 .header {
-  font-size: 5em;
+  font-size: 3em;
   padding: 0.5em;
   color: white;
+  max-width: 38rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1{
+  font-family: 'Play';
 }
 
 .menu {
-  font-size: 2.5em;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -45,4 +52,18 @@ a {
   padding: 5em;
   color: white;
   box-sizing: border-box;
+}
+
+.usage p{
+  font-size: 18px;
+
+}
+.bash{
+  font-size: 18px;
+}
+
+.form{
+  color: white;
+  max-width: 38rem;
+  margin: auto;
 }

@@ -14,20 +14,47 @@
       type="text/css"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
 
     <title>frgt.dev</title>
   </head>
 
   <body>
-    <div class="add">
-      <div class="ui input">
-        <input type="text" placeholder="Search..." />
+    <div class="header">
+      <a href="/">
+        <img
+          src="https://github.com/cobanov/frgt/blob/main/static/frgtblack.png?raw=true"
+          alt=""
+        />
+      </a>
+      <p>
+        you can add your custom cheatsheet!
+      </p>
+    </div>
+    <div>
+      <div class="form">
+        <div class="ui inverted segment">
+          <div class="ui inverted form">
+            <div class="two fields">
+              <div class="field">
+                <label>Topic Name</label>
+                <input placeholder="Topic Name" type="text" />
+              </div>
+              <div class="field">
+                <label>Gist URL</label>
+                <input placeholder="Gist URL" type="text" />
+              </div>
+            </div>
+            <div class="inline field"></div>
+          </div>
+          <div class="ui submit button">Submit</div>
+        </div>
       </div>
-      <br />
-      <div class="ui labeled input">
-        <div class="ui label">gist</div>
-        <input type="text" placeholder="github gist adress" />
-      </div>
+    </div>
     </div>
   </body>
 </html>
