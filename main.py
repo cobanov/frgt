@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import requests
 import utils
 
@@ -21,7 +21,7 @@ def hints(topic):
     :return: A string.
     """
     try:
-        url = utils.get_url(topic)
+        url = utils.get_url(topic)[0]
         payload = requests.get(url).text
 
         # if name and url are separated by a pipe, split them
@@ -42,11 +42,26 @@ def hints(topic):
     
     return "No hints found."
 
-@app.route('/add')
+
+@app.route('/add', methods=['GET', 'POST'])
 def add():
+    
+    if request.method == 'POST':
+        topic = request.form['topic']
+        url = request.form['url']
+        is_gist = utils.is_gist(url)
+
+        if is_gist:
+            utils.add_topic(topic, url)
+            render_template("success.html")
+
+        else:
+            print('Error')
+            render_template('error.html', error="The url you entered is not a valid gist url.")
+    
     return render_template("add.html")
 
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
