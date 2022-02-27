@@ -25,7 +25,8 @@ def hints(topic):
         payload = requests.get(url).text
         return payload
 
-    except:
+    except Exception as e:
+        print(e)
         pass
     
     return "No hints found."

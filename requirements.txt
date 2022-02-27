@@ -1,3 +1,5 @@
 flask
 gunicorn
 requests
+tinydb
+tinydb-appengine
