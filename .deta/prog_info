@@ -1,0 +1,1 @@
+{"id":"5ce362f6-c521-4544-bfe7-cd8d0085037b","space":18991,"runtime":"python3.9","name":"frgt","path":"gjp6wn","project":"a047pg0i","account":"144798365827","region":"eu-central-1","deps":["flask","gunicorn","requests"],"envs":null,"public":true,"log_level":"debug","cron":""}

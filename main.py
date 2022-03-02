@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request
 import requests
 import utils
+from deta import Deta
 
+
+deta = Deta('a047pg0i_9AWgmcVXv8x1JJBM6iQZkMj6gTsm1Q1g')
+db = deta.Base('cheatsheets')
 app = Flask(__name__)
 
 @app.route("/")
@@ -21,10 +25,9 @@ def hints(topic):
     :return: A string.
     """
     try:
-        url = utils.get_url(topic)[0]
+        url = db.get(topic)['url']
         payload = requests.get(url).text
-
-        # if name and url are separated by a pipe, split them
+        
         try:
             piped_payload = ""
             piped = payload.split('\n')
@@ -49,10 +52,10 @@ def add():
     if request.method == 'POST':
         topic = request.form['topic']
         url = request.form['url']
-        is_gist = utils.is_gist(url)
+        is_gist = utils.check_is_gist(url)
 
         if is_gist:
-            utils.add_topic(topic, url)
+            db.put({'key': topic, 'url': url})
             render_template("success.html")
 
         else:
