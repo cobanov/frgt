@@ -3,3 +3,4 @@ __pycache__
 *.pyc
 pstdb.py
 test.py
+.env
