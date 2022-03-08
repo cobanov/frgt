@@ -4,8 +4,7 @@ import requests
 import utils
 import os
 
-deta = Deta("a047pg0i_9AWgmcVXv8x1JJBM6iQZkMj6gTsm1Q1g")
-# deta = Deta(os.getenv('DB_PASS'))
+deta = Deta(os.getenv("DB_PASS"))
 
 db = deta.Base("cheatsheets")
 app = Flask(__name__)
