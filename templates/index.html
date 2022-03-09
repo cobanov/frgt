@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+      <div class="menu">
+        <a href="https://github.com/cobanov/ ">
+          <i class="fa-brands fa-github"></i> check out the project<br />
+        </a>
+        <a href="/add">
+          <i class="fa-solid fa-circle-plus"></i> add a cheat sheet <br />
+        </a>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <div class="features">
+        <div class="usage">
+          <h1>Usage</h1>
+          <p>
+            You can type anything <br />
+            e.g. docker, bash or python
+          </p>
+          <div class="ui basic massive label">
+            <i class="terminal icon"></i> curl frgt.dev/tmux
+          </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+
+        <div class="bash">
+          <h1>Bash</h1>
+          <p>Install frgt.sh and get cheatsheets faster!</p>
+
+          <div class="ui basic massive label">
+            <i class="terminal icon"></i> frgt docker
+          </div>
+          <div class="ui massive inverted segment" name="codes">
+            <div class="codes">
+              <p>
+                chmod u+x frgt.sh<br />
+                alias frgt='/path/to/frgt.sh'
+              </p>
+            </div>
+          </div>
+          <a href="https://github.com/cobanov/frgt/blob/main/frgt.sh">
+            <div class="ui massive inverted button">
+              <i class="download icon"></i> Download bash script
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

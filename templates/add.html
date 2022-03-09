@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div>
+      <div class="form">
+        <div class="ui inverted segment">
+          <form method="POST">
+            <div class="ui inverted form">
+              <div class="two fields">
+                <div class="field">
+                  <label>Topic Name</label>
+                  <input placeholder="Topic Name" type="text" name="topic" />
+                </div>
+
+                <div class="field">
+                  <label>Gist URL</label>
+                  <input placeholder="Gist URL" type="text" name="url" />
+                </div>
+              </div>
+              <div class="inline field"></div>
+            </div>
+            <input class="ui submit button" type="submit"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

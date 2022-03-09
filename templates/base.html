@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <title>frgt.dev</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="/">
+        <img src="{{url_for('static', filename='frgtblack.png')}}" />
+      </a>
+      <p>
+        super-easy cheatsheets for developers on terminal without any
+        installation!
+      </p>
+
+      <div id="content">{% block content %}{% endblock %}</div>
+    </div>
+
+    <div class="footer">Cobanov - 2022</div>
+  </body>
+</html>
